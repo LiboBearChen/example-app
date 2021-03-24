@@ -7,7 +7,11 @@ use Illuminate\Http\Request;
 class ProductsController extends Controller
 {
     public function index(){
-        return view('products.index');
+        $title="fwefwefwe";
+        $description="ucn8743tz782nzcr247nor13zn2zcr829mzcr892zr9zr9nr2389n";
+        //return view('products.index',compact('title','description'));
+        $data=['one'=>'fref','two'=>'ewfwe'];
+        return view('products.index')->with('data',$data);
     }
 
     public function about(){
