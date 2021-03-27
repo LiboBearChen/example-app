@@ -13,7 +13,8 @@ use App\Http\Controllers\ProductsController;
 |
 */
 
-Route::get('/products',[ProductsController::class,'index'] );
-Route::get('/products/{id}',[ProductsController::class,'show'] );
-Route::get('/products/about',[ProductsController::class,'about'] );
+Route::get('/products',[ProductsController::class,'index'] )->name('products');
+// Route::get('/products/{id}',[ProductsController::class,'show'] )->where('id','[0-9]+');
+// Route::get('/products/{name}/{id}',[ProductsController::class,'show'] )->where(['id'=>'[0-9]+','name'=>'[a-z]+']);
+// Route::get('/products/about',[ProductsController::class,'about'] );
 

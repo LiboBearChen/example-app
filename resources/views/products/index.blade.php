@@ -7,6 +7,5 @@
 </head>
 <body>
     <h1>Products</h1>
-    <p>{{$products}}</p>
 </body>
 </html>
